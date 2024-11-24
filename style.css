@@ -65,6 +65,10 @@ hr {
     transition: 0.5s;
 }
 
+.container ul a {
+    color: black;
+}
+
 .accordion {
     cursor: pointer;
     padding: 18px;
@@ -105,21 +109,21 @@ hr {
 
 .panelBox {
     width: 100%;
-    min-height: 3rem;
-    padding: 1rem;
+    padding: 12px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: default;
+    cursor: pointer;
     height: fit-content;
-}
-
-.panelBox p {
-    padding-right: 3rem;
 }
 
 .panelBox:hover {
     background-color: #fffcd8;
+}
+
+.panel a {
+    text-decoration: none;
+    color: black;
 }
 
 li::marker {
@@ -190,8 +194,4 @@ nav {
 .dropdownContent a {
     width: 75%;
     text-align: left;
-}
-
-summary:focus{
-    outline: none;
 }
