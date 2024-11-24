@@ -31,6 +31,11 @@ header h1 a{
     text-decoration: none;
 }
 
+footer {
+    padding: 3rem;
+    text-align: center;
+}
+
 .container {
     top: 0%; left: 50%; transform: translate(-50%, 0);
     margin: 2em 0;
