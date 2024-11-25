@@ -14,8 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="mobileNav">
+        <div id="sidePanel" class="sidePanelMenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                Home</a>
+            <button class="sidePanelDropdownBtn">
+                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                Characters
+            </button>
+            <div class="sidePanelDropdownContainer">
+                <a href="quill.html">Quill</a>
+                <a href="nim.html">Nim Frysgard</a>
+                <a href="melkor.html">Melkor von Dos</a>
+                <a href="kalilia.html">Kalilia Crowdance</a>
+                <a href="fenris.html">Fenris</a>
+                <a href="freakycarl.html">Freaky Carl</a>
+            </div>
+            <a href="sessions.html"><i class="fa fa-book" aria-hidden="true"></i>
+                Sessions</a>
+            <a href="https://github.com/Frisaf/dnd-sessions" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+                Github</a>
+        </div>
+    </div>
     <main>
-        <header><h1><a href="index.html">Dungeon Domain</a></h1></header>
+        <header><button class="openbtn" onclick="openNav()">&#9776;</button><h1><a href="index.html">Dungeon Domain</a></h1></header>
         <nav>
             <ul class="navbar">
                 <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
@@ -41,7 +65,7 @@
             <h1>Melkor von Dos</h1>
             <p><em>Played by Melker</em></p>
             <hr>
-            <img src="images/melkorcharactersheet.png" width="70%">
+            <img src="images/melkorcharactersheet.png" class="charSheetimg">
             <p>60-year old halfling who rejected fishing.</p>
         </div>
     </main>
