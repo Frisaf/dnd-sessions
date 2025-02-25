@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon Domain - Kalilia Crowdance</title>
+    <title>Dungeon Domain</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,10 +66,14 @@
             </ul>
         </nav>
         <div class="container">
-            <h1>Kalilia Crowdance</h1>
-            <p><em>Played by Bianca</em></p>
+            <h1>Dungeon Master Secrets</h1>
             <hr>
-            <img src="images/kaliliacharactersheet.png" class="charSheetimg">
+            <p>Password required to continue.</p>
+            <form id="form_id" method="post" name="login">
+                <label>PASSWORD</label>
+                <input type="password" name="password" id="password"/>
+                <input type="button" value="LOGIN" id="submit" onclick="validate()">
+            </form>
         </div>
     </main>
     <footer>

@@ -36,3 +36,24 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
+
+var attempt = 4;
+
+function validate() {
+    var password = document.getElementById("password").value;
+    console.log("Current URL: ", window.location.href);
+    if (password === "CoolAndBest.123") {
+        alert("Login success");
+        console.log("Redirecting to secrets.html");
+        window.location.href = "secrets.html";
+        return false;
+    } else {
+        attempt--;
+        alert("Wrong password. You have " + attempt + " attempts left");
+        if (attempt === 0) {
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+        }
+        return false
+    }
+}
